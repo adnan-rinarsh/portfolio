@@ -401,7 +401,7 @@ body.dark-theme{
 }
 
 /* ==================ACTIVATE BUTTTON FILTER================== */
-.filter-tab-activ{
+.filter-tab-active{
     background-color: var(--body-color);
 }
 
