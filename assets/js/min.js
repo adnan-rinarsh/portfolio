@@ -1,6 +1,6 @@
 /* ================FILTERS TABS===============*/
-const tabs = document. querySelectorAll("[data-target]")
-      tabContents = document.querySelectorAll('[data-content') 
+const tabs = document.querySelectorAll("[data-target]")
+const tabContents = document.querySelectorAll('[data-content]')
 
 tabs.forEach(tab =>{
     tab.addEventListener('click', () =>{
@@ -12,7 +12,7 @@ tabs.forEach(tab =>{
     target.classList.add('filters__active')
 
     tabs.forEach(t =>{ /* t = tab*/
-        t.classList.remove('filter-tab-activ')
+        t.classList.remove('filter-tab-active')
     })
     tab.classList.add('filter-tab-active')
   })
@@ -21,7 +21,8 @@ tabs.forEach(tab =>{
 /*=============== DARK LIGHT THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
-const iconTheme = 'ri-sun-linesun'
+const iconTheme = 'ri-sun-line'
+
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
