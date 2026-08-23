@@ -452,16 +452,14 @@ body.dark-theme{
 
 }
 
-/* ================= FOR MEDIUM DEVICES ============================= */
-@media screen and (min-width:576px){
-    .projects__content{
-        grid-template-columns: 332px;
-        justify-content: center;
+/* ================= FOR MEDIUM DEVICES =============================   */
+@media screen and (min-width: 776px){
+    .projects__content{     
+        grid-template-columns: repeat(2, 332px);
     }
-
-    .filters__content{
-        width: 332px;
-        margin: 3rem auto;
+    .skills__content{
+        justify-content: center;
+        column-gap: 3rem;
     }
 }
 
